@@ -324,6 +324,13 @@ text-transform: uppercase;
     .fifth-section-top {
         display: flex;
         justify-content: space-between;
+        margin-top: 80px;
+        margin-bottom: 20px;
+
+        h2 {
+            margin-bottom: 10px;
+        }
+
     }
 
     .fifth-section-main {
@@ -367,8 +374,14 @@ text-transform: uppercase;
         p  {
          font-style: italic;
          font-size: 16px;
+
             
         }
+
+        .quote {
+            margin-bottom: 0;
+         }
+
         .quote::before {
             content: '"'; 
         }
@@ -555,3 +568,4 @@ footer .button a:hover,
 footer .button a:active {
     text-decoration: none;
 }
+
