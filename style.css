@@ -8,11 +8,12 @@ body {
   font-family: "Nunito Sans", sans-serif;
   max-width: 1440px;
   margin: 0 auto;
-  background: linear-gradient(180deg, rgb(251, 240, 236) 0%, rgb(255, 255, 255) 100%);
+  background: rgb(248, 234, 227);
+  background: linear-gradient(180deg, rgb(248, 234, 227) 0%, rgb(232, 232, 228) 19%, rgb(255, 255, 255) 38%, rgb(255, 255, 255) 100%);
 }
 
 .page-wrapper {
-  max-width: 1080px;
+  max-width: 1150px;
   margin: 0 auto;
   margin-top: 40px;
 }
@@ -21,14 +22,13 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 2.5rem;
+  margin-bottom: 0rem;
 }
 
 .logo-wrapper {
   display: flex;
   align-items: center;
   gap: 1rem;
-  margin-left: -2rem;
 }
 
 nav {
@@ -36,7 +36,6 @@ nav {
   gap: 2rem;
   font-weight: 500;
   text-transform: uppercase;
-  margin-right: -2rem;
 }
 nav a {
   color: black;
@@ -62,6 +61,7 @@ nav .global-button-top {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin: 50px;
 }
 
 .first-section-left {
@@ -74,7 +74,12 @@ nav .global-button-top {
   text-transform: uppercase;
   font-weight: 650;
 }
-.first-section-left p {
+.first-section-left h1:first-letter {
+  font-size: 48px;
+  font-weight: 600;
+}
+
+p {
   margin: 30px 0;
   font-size: 20px;
   font-weight: 400;
@@ -99,7 +104,88 @@ nav .global-button-top {
   font-weight: 600;
   letter-spacing: 2px;
   margin-left: 15px;
+  display: block;
+  height: 100%;
+  width: 100%;
+  margin-top: 30px;
 }
 .global-button img {
   margin-right: 15px;
+}
+
+.second-section {
+  display: flex;
+  margin-top: 250px;
+}
+
+.second-section-left p {
+  font-size: 16px;
+  width: 412px;
+}
+
+.global-description {
+  text-transform: uppercase;
+}
+.global-description h2 {
+  color: #F3B562;
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+.global-description h3 {
+  color: #647B64;
+  font-size: 41px;
+  font-weight: 500;
+}
+
+.second-section-right {
+  display: flex;
+  flex-wrap: wrap;
+}
+.second-section-right .right-section-box:first-child {
+  background-color: white;
+  box-shadow: 0px 5.87px 31.33px 0px rgba(155, 148, 148, 0.168627451);
+}
+
+.right-section-box {
+  width: 288px;
+  height: 237px;
+  border-radius: 8px;
+  margin: 10px 10px 10px 70px;
+}
+.right-section-box h3 {
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.right-section-box h3:first-letter {
+  font-size: 23px;
+  font-weight: 500;
+}
+.right-section-box p {
+  font-size: 13px;
+  margin-top: 10px;
+}
+
+.right-section-box-wrapper {
+  margin: 30px;
+}
+.right-section-box-wrapper .icon-wrapper-one {
+  background-color: #647B64;
+  width: 48px;
+  height: 48px;
+  border-radius: 8px;
+  padding: 8px;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.icon-wrapper {
+  background-color: white;
+  width: 48px;
+  height: 48px;
+  border-radius: 8px;
+  padding: 8px;
+  text-align: center;
+  margin-bottom: 15px;
 }/*# sourceMappingURL=style.css.map */
