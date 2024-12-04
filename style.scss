@@ -292,5 +292,32 @@ text-transform: uppercase;
     background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 74%, rgba(219,221,219,1) 100%);
     }
 
+    .fourth-section {
+        display:flex;
+        margin-top: 120px;
+
+    }
+
+
+
+    .fourth-section-right {
+        margin: 130px 80px 100px 140px;
+
+        h2 {
+            font-size: 24px;
+            weight: 500;
+        }
+
+        h3 {
+            font-size: 45px;
+            weight: 500;
+        }
+
+        p {
+            font-size: 18px;
+            font-weight: 400;
+
+        }
+    }
 
     
