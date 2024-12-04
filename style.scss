@@ -1,4 +1,4 @@
-@use 'scss/variables';
+@use 'scss/_variables.scss' as col;
 
 
 *,*::before,*::after {
@@ -9,10 +9,9 @@
 
 
 body {
-    font-family: 'Sen', sans-serif;
+    font-family: 'Nunito Sans', sans-serif;
     max-width: 1440px;
     margin: 0 auto;  
-    background: rgb(251,240,236);
     background: linear-gradient(180deg, rgba(251,240,236,1) 0%, rgba(255,255,255,1) 100%);
 }
 
@@ -28,6 +27,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 2.5rem;
 }
 
 .logo-wrapper {
@@ -49,22 +49,27 @@ nav {
         color: black;
         text-decoration: none;
         font-size: 12px;
+        padding-top: 10px;
+     }
+
+     :last-child {
+        color: col.$color-white;
+        font-weight: 400; 
      }
      
      a::first-letter {
         font-size: 16px;
      }
 
-     .global-button {
-                padding: 10px 15px;
-                color: $color-primary ;
-                text-transform: uppercase;
-                font-size: 1rem;
-                text-decoration: none;
-                background: linear-gradient(45deg, #647B64, #66AC66);
+     .global-button-top {
+          padding: 10px 15px;
+          color: col.$color-primary;
+          background: col.$button-gradient;
+          border-radius: 3px;
+     }
      }
 
-}
+
 
 
 
@@ -78,4 +83,49 @@ nav {
 .first-section-left{
 width: 495px;
 height: 375px;
+
+h1 {
+    margin-top: 2rem;
+    font-size: 38px;
+    text-transform: uppercase;
+    font-weight: 650;
+}
+
+p {
+    margin: 30px 0;
+    font-size: 20px;
+    font-weight: 400;
+    color: col.$color-gray;
+
+}
+
+     
+}
+
+.global-button {
+    padding: 10px 15px;
+          color: col.$color-primary;
+          background: col.$button-gradient;
+          border-radius: 2px;
+          width: 350px;
+          height: 73px;
+          text-transform: uppercase;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+
+          
+
+          a {
+            color: col.$color-white;
+            text-decoration: none;
+            font-weight: 600;
+            letter-spacing: 2px;
+            margin-left: 15px;
+            
+          }
+
+          img {
+            margin-right: 15px;
+          }
 }
