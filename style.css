@@ -1,1 +1,67 @@
-/*# sourceMappingURL=style.css.map */
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Sen", sans-serif;
+  max-width: 1440px;
+  margin: 0 auto;
+  background: rgb(251, 240, 236);
+  background: linear-gradient(180deg, rgb(251, 240, 236) 0%, rgb(255, 255, 255) 100%);
+}
+
+.page-wrapper {
+  max-width: 1080px;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+
+.header-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-left: -2rem;
+}
+
+nav {
+  display: flex;
+  gap: 2rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-right: -2rem;
+}
+nav a {
+  color: black;
+  text-decoration: none;
+  font-size: 12px;
+}
+nav a::first-letter {
+  font-size: 16px;
+}
+nav .global-button {
+  padding: 10px 15px;
+  color: #647B64;
+  text-transform: uppercase;
+  font-size: 1rem;
+  text-decoration: none;
+  background: linear-gradient(45deg, #647B64, #66AC66);
+}
+
+.first-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.first-section-left {
+  width: 495px;
+  height: 375px;
+}/*# sourceMappingURL=style.css.map */
