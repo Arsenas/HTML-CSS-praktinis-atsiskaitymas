@@ -264,6 +264,7 @@ text-transform: uppercase;
     img {
         margin-top: 10px;
         margin-left: 5px;
+        margin-top: 10px;
     }
 
     h4 {
@@ -305,12 +306,12 @@ text-transform: uppercase;
 
         h2 {
             font-size: 24px;
-            weight: 500;
+            font-weight: 500;
         }
 
         h3 {
             font-size: 45px;
-            weight: 500;
+            font-weight: 500;
         }
 
         p {
@@ -320,4 +321,237 @@ text-transform: uppercase;
         }
     }
 
+    .fifth-section-top {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .fifth-section-main {
+        display: flex;
+    }
+
+    .section-box {
+        width: 360px;
+        height: 419px;
+        border-radius: 10px;
+        margin: 0 20px;
+        background: rgb(255,255,255);
+        background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 74%, rgba(219,221,219,1) 100%);
+    }
+
+    .box-top {
+        display: flex;
+
+        img {
+            margin-left: 30px;
+        }
+
+        h4 {
+            font-size:16px;
+            font-weight: 500;
+
+        }
+
+        h5 {
+            font-size: 12px;
+            font-weight: 400;
+            text-transform: uppercase;
+
+        }
+        
+    }
+
+    .box-bottom {
+        width: 260px;
+        text-align: center;
+        p  {
+         font-style: italic;
+         font-size: 16px;
+            
+        }
+        .quote::before {
+            content: '"'; 
+        }
+        
+        .quote::after {
+            content: '"'; 
+        }
+    }
+
+
+
+
+
+
+
+   
+.footer {
+    background-color: col.$color-footer; 
+    color: col.$color-primary; 
+    padding-top: 80px;
+    display: flex;
+    justify-content: center;
+    margin-top: 150px;
+    padding-bottom: 50px;
+}
+
+.sixth-section {
+    display: flex;
+    max-width: 1200px;
+    width: 100%;
+    gap: 20px;
+    flex-wrap: wrap; 
+}
+
+/* Footer Box Styling */
+.footer-box {
+    flex: 1;
+    margin: 10px;
+
+    p {
+        margin-top:10px;
+        margin-bottom: 10px;
+
+        font-size: 14px;
+    }
+
+    span {
+        font-size: 14px;
+        color: col.$color-black;
+    }
     
+}
+
+
+.footer-icon {
+    position: relative;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%; /* Ensures circular shape */
+    overflow: hidden; /* Prevents image from overflowing the div */
+}
+
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(78, 105, 73, 0.10); 
+    border-radius: 50%; 
+   
+}
+
+.socials {
+    position: relative;
+    width: 17px;
+    height: 17px;
+    object-fit: contain;
+    margin-left: 7px;
+    margin-top: 7px;
+}
+
+
+.footer-box h3 {
+    font-size: 18px;
+    margin-bottom: 20px;
+    font-weight: 500;
+    
+}
+
+.footer-box:last-of-type h3 {
+    text-transform: uppercase;
+}
+
+.footer-box ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-box ul li a {
+    text-decoration: none;
+    color: col.$color-black;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.footer-box li {
+    margin-bottom: 10px;
+}
+
+
+.footer-box ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Logo Section */
+.footer-box-top {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo-img img {
+
+    width: 30px;
+}
+
+/* Social Icons */
+.footer-box-bot {
+    display: flex;
+    gap: 10px;
+    margin-top:20px;
+}
+
+/* Form Section */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 283px;
+}
+
+textarea {
+    border-color: col.$color-white;
+    padding: 10px;
+    font-size: 14px;
+    resize: none;
+   
+}
+
+footer .button {
+    padding: 10px 15px;
+          color: col.$color-white;
+          background: col.$button-gradient;
+          border-radius: 2px;
+          width: 283px;
+          height: 56px;
+          text-transform: uppercase;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          border: none;
+          text-decoration: none;
+          font-size: 14px;
+          font-weight: 500;
+
+}
+
+
+footer .button a {
+    color: col.$color-white;
+    text-decoration: none; /* Removes underline for all states */
+    border: none;
+}
+
+footer .button a:visited {
+          color: col.$color-white;
+          
+}
+
+footer .button a:link,
+footer .button a:visited,
+footer .button a:hover,
+footer .button a:active {
+    text-decoration: none;
+}
